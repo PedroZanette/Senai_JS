@@ -112,7 +112,7 @@ function excluirCliente(placa) {
 
 // Função para carregar dados na tabela
 function carrega() {
-    let tabela = document.getElementById("carros");
+    let tabela = document.getElementById("alunos");
     clientes = JSON.parse(localStorage.getItem("clientes")) || [];
 
     tabela.innerHTML = "";
@@ -150,7 +150,7 @@ function cadastrarCliente() {
 
     // Verifica se a placa já está cadastrada
     if (clienteExistente(placa)) {
-        alert("Placa já cadastrada. Insira uma placa única.");
+        alert("Aluno já cadastrada. Insira um aluno diferente.");
         return;
     }
 
